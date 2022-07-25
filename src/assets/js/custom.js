@@ -7,7 +7,6 @@ const handelSidebar = () => {
 
                 let nextEl = element.nextElementSibling;
                 let parentEl = element.parentElement;
-                let allSubmenus_array = parentEl.querySelectorAll('.submenu');
 
                 if (nextEl && nextEl.classList.contains('submenu')) {
                     e.preventDefault();
@@ -19,6 +18,13 @@ const handelSidebar = () => {
                 }
             });
         })
+    } else {
+        document.querySelectorAll('.sidebar .nav-link').forEach(function (element) {
+            let nextEl = element.nextElementSibling;
+            
+            nextEl.style.display = "none"
+            
+        })
     }
 }
 document.addEventListener("DOMContentLoaded", function () {
@@ -26,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 window.onresize = () => {
     handelSidebar();
+    console.log("hiii");
 }
 // DOMContentLoaded  end
 
