@@ -1,0 +1,36 @@
+.notification .mat-icon{
+    font-size: 27px;
+    width: 27px;
+    height: 27px;
+}
+.notification{
+    position: relative;
+}
+.notification span{
+    position: absolute;
+    background-color: var(--secondary-color);
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 14px;
+    height: 14px;
+    color: white;
+    font-size: 8px;
+    border-radius: 50%;
+}
+.avater-drop{
+    border: none;
+    background: none;
+}
+.avater-drop img:nth-child(1){
+    width: 45px;
+}
+.avater-drop img:nth-child(2){
+    width: 15px;
+    margin-left: 10px;
+}
+.avater-drop::after{
+    display: none;
+}

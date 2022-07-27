@@ -1,10 +1,10 @@
 <div class="body">
-    <div class="d-flex w-100 ">
-        <app-sidebar class="side-col "></app-sidebar>
-        <div class="main-col mt-3">
-            <div class="card py-5 h-100 card-main">
-                <div class="row mx-0 border-bottom pb-4">
-                    <div class="d-flex flex-column align-items-start col-lg-8 col-12 order-lg-1 order-1">
+    <div class="d-flex flex-lg-row flex-column w-100 ">
+        <app-sidebar [showSidebar]="show" class="side-col "></app-sidebar>
+        <div class="main-col my-3 order-2">
+            <div class="card py-5 px-4 h-100 card-main">
+                <div class="row mx-0 border-bottom pb-4 mb-4">
+                    <div class="d-flex flex-column align-items-start col-lg-7 px-0 col-12 order-lg-1 order-1">
                         <h1 class="fw-700 text-dark">Lorem Ipsum is simply
                             dummy text</h1>
                         <p class="fs-7 fw-600">Lorem Ipsum is simply dummy text of the printing industry.</p>
@@ -13,11 +13,201 @@
                             <i class="fa fa-arrow-right text-white  fs-8 ps-4"></i>
                         </button>
                     </div>
-                    <div class="col-lg-4 col-12 order-lg-2 order-1">
-                        <img src="../assets/images/bulb.PNG" class="w-75" alt="">
+                    <div
+                        class="col-lg-5 d-lg-flex d-none justify-content-center align-items-start  col-12 px-0 order-lg-2 order-1">
+                        <img src="../assets/images/bulb.PNG" class="w-50 " alt="">
                     </div>
+                </div>
+                <h5 class="fw-800 text-dark">Head Office Information</h5>
+                <div class="row mx-0 pt-4">
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Office Name <i
+                                class="fa fa-asterisk text-danger fs-12"></i></span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Text">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex pb-lg-0 pb-2 ">Type of Office <i
+                                class="fa fa-asterisk text-danger fs-12"></i></span>
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Address<i
+                                class="fa fa-asterisk text-danger fs-12"></i></span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Text">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">
+                            Country<i class="fa fa-asterisk text-danger fs-12"></i>
+                        </span>
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex flex-column pb-lg-0 pb-2 ">
+                            State
+                            <span class="d-flex ">
+                                Province
+                                <i class="fa fa-asterisk text-danger fs-12"></i>
+                            </span>
+                        </span>
+
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex pb-lg-0 pb-2 ">City <i class="fa fa-asterisk text-danger fs-12"></i></span>
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex flex-column pb-lg-0 pb-2 form-split-label">
+                            Contract
+                            <span class="d-flex ">
+                                Phone No.
+                                <i class="fa fa-asterisk text-danger fs-12"></i>
+                            </span>
+                        </span>
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Country + Area Code</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-3">
+                        <div class="form-input col ">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-2 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-3">
+                        <div class="form-input col ">
+                            <input type="text" class="text-center" placeholder="Ext">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-lg-row flex-column  pt-2 col-12 px-0 pb-3">
+                        <span class="d-flex flex-column pb-lg-0 pb-2 form-split-label">
+                            Type of
+                            <span class="d-flex ">
+                                Orgnization
+                                <i class="fa fa-asterisk text-danger fs-12"></i>
+                            </span>
+                        </span>
+                        <div class="d-flex flex-column">
+                            <div class="d-flex flex-lg-row flex-column ps-lg-4">
+                                <div class="ps-lg-4 pt-lg-0 pt-3 ">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox" checked>
+                                        <span>Proprietorship</span>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="ps-lg-4 pt-lg-0 pt-3 ">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span>Limited Company</span>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="ps-lg-4 pt-lg-0 pt-3 ">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span>Corporation</span>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-lg-row flex-column align-items-lg-center ps-lg-4 pt-lg-4">
+                                <div class="ps-lg-4 pt-lg-0 pt-3">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span>Partnership</span>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="ps-lg-4 pt-lg-0 pt-3">
+                                    <label class="checkbox-container">
+                                        <input type="checkbox">
+                                        <span>Other</span>
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                                <div class="ps-lg-4 pt-lg-0 pt-3">
+                                    <div class="form-input  ">
+                                        <input type="text" placeholder="Please Specify">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex flex-column pb-lg-0 pb-2 form-split-label">
+                            Company
+                            <span class="d-flex ">
+                                Reg No
+                                <i class="fa fa-asterisk text-danger fs-12"></i>
+                            </span>
+                        </span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex flex-column pb-lg-0 pb-2 ">
+                            Business License
+                            <span class="d-flex ">
+                                Number
+                                <i class="fa fa-asterisk text-danger fs-12"></i>
+                            </span>
+                        </span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top mt-4 pt-4 d-flex justify-content-end">
+                    <button class="btn btn-primary">
+                        <span class="text-white   fw-500 pt-1 fs-7">Next</span>
+                        <i class="fa fa-arrow-right text-white  fs-8 ps-4"></i>
+                    </button>
                 </div>
             </div>
         </div>
+        <app-aside  [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="aside-col order-lg-3 order-1 "></app-aside>
     </div>
 </div>

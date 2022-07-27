@@ -1,5 +1,5 @@
 <div class="w-100">
-    <nav class="sidebar px-3 pt-5 pb-3">
+    <nav class="sidebar px-3 pt-5 pb-3 " [class.closesidebar] = "showSidebar == true" [class.opensidebar] = "showSidebar == false" >
         <div class="d-flex flex-column ps-4">
             <a href="" class="navbar-brand"><img src="../../../assets/images/logo.png" alt=""></a>
         </div>
@@ -94,7 +94,7 @@
                 <span class="pt-1 col fw-600 fs-7 text-dark ps-2">Lorem Ipsum</span>
             </a>
         </div>
-        <div class="card mt-5 d-flex flex-column align-items-center">
+        <div class="card mt-5 d-lg-flex d-none flex-column align-items-center">
             <img src="../../../assets/images/rocket.png" class="w-75 rocket" alt="">
             <a href="" class="pt-4 text-primary">Lorem Ipsum  <i class="fa fa-arrow-right text-primary fs-7 ps-2"></i> </a>
         </div>

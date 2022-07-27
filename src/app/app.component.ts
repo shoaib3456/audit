@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'audit-app';
-  showFiller = false;
+  show :boolean = true;
+  toogelSidebar(data :boolean){
+    this.show = data
+  }
+
 }
