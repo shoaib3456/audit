@@ -1,22 +1,23 @@
 <div class="w-100">
     <nav class="sidebar px-3 pt-5 pb-3 " [class.closesidebar] = "showSidebar == true" [class.opensidebar] = "showSidebar == false" >
-        <div class="d-flex flex-column ps-4">
+        <div class="d-flex align-items-center justify-content-between ps-4">
             <a href="" class="navbar-brand"><img src="../../../assets/images/logo.png" alt=""></a>
+           <i (click)="toogleSidebar()" class="fa  fa-times d-lg-none d-block px-4 pb-2 pointer fs-4 text-faded-2"></i>
         </div>
-        <ul class="nav flex-column pt-5">
+        <ul class="nav flex-column pt-5" >
             <li class="nav-item">
-                <a class="nav-link active d-flex align-items-center " href="#">
+                <a class="nav-link  d-flex align-items-center " href="#">
                     <i class="fa fa-home fs-5 pe-2"></i>
                     <span class="pt-1">Dashboard</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  d-flex align-items-center " href="#">
+                <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/fee-charges">
                     <i class="far fa-file-alt fs-5 pe-3"></i>
-                    <span class="pt-1">Lorem Ipsum</span>
+                    <span class="pt-1">Fee Charges</span>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link  d-flex align-items-center " href="#">
                     <i class="far fa-file-alt fs-5 pe-3"></i>
                     <span class="pt-1 col">Head Office Setup</span>
@@ -67,22 +68,28 @@
                         </li>
                     </div>
                 </ul>
+            </li> -->
+            <li class="nav-item">
+                <a class="nav-link  d-flex align-items-center " >
+                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                    <span class="pt-1">Tax Charges</span>
+                </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link  d-flex align-items-center " href="#">
+                <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/office-management" >
                     <i class="far fa-file-alt fs-5 pe-3"></i>
-                    <span class="pt-1">Lorem Ipsum</span>
+                    <span class="pt-1">Office Management</span>
                 </a>
             </li>
             <li class="nav-item">
                 <a class="nav-link  d-flex align-items-center " href="#">
                     <i class="far fa-file-alt fs-5 pe-3"></i>
-                    <span class="pt-1">Lorem Ipsum</span>
+                    <span class="pt-1">Setup Configuration</span>
                 </a>
             </li>
 
         </ul>
-        <div class="d-flex flex-column ps-4 pt-5 pb-5">
+        <div class="d-flex flex-column ps-4 pt-5 pb-5" >
             <span class="text-faded-2 fs-11 pb-4">Lorem Ipsum</span>
             <a class=" d-flex align-items-center " href="#">
                 <i class="far fa-envelope text-dark fs-5 pe-2"></i>
@@ -94,7 +101,7 @@
                 <span class="pt-1 col fw-600 fs-7 text-dark ps-2">Lorem Ipsum</span>
             </a>
         </div>
-        <div class="card mt-5 d-lg-flex d-none flex-column align-items-center">
+        <div class="card mt-5 d-lg-flex d-none flex-column align-items-center" >
             <img src="../../../assets/images/rocket.png" class="w-75 rocket" alt="">
             <a href="" class="pt-4 text-primary">Lorem Ipsum  <i class="fa fa-arrow-right text-primary fs-7 ps-2"></i> </a>
         </div>

@@ -34,3 +34,11 @@
 .avater-drop::after{
     display: none;
 }
+.card-blue{
+    background-color: var(--primary-color);
+    padding: 40px 20px ;
+    border-radius: 15px;
+}
+.card-blue img{
+    width: 100px;
+}

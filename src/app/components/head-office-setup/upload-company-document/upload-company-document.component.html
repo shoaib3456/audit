@@ -1,0 +1,41 @@
+<h2 class="fw-700 text-dark w-100 text-center">Upload Company Document</h2>
+<div class="row mx-0 w-100 border-top border-bottom mt-4 py-4 ">
+    <div class="col-12 px-0 py-2 d-flex align-items-center justify-content-between">
+        <span class="fs-7 fw-700">Company Registration Certificate</span>
+        <button class="btn-1 btn-1-size">Upload</button>
+    </div>
+    <div class="col-12 px-0 py-2 d-flex align-items-center justify-content-between">
+        <span class="fs-7 fw-700">Business Agreement</span>
+        <button class="btn-1 btn-1-size">Upload</button>
+    </div>
+    <div class="col-12 px-0 py-2 d-flex align-items-center justify-content-between">
+        <span class="fs-7 fw-700">Partnership Agreement</span>
+        <button class="btn-1 btn-1-size">Upload</button>
+    </div>
+    <div class="col-12 px-0 py-2 d-flex align-items-center justify-content-between">
+        <span class="fs-7 fw-700">Trade License</span>
+        <button class="btn-1 btn-1-size">Upload</button>
+    </div>
+</div>
+<div class="d-flex w-100 pt-4  justify-content-between align-items-center">
+    <span class="text-dark">Enter Document Name</span>
+    <button class="btn-1 btn-1-size">Upload</button>
+</div>
+<div class="d-flex w-100 pt-4  flex-column border-top mt-4">
+    <label class="checkbox-container">
+        <input type="checkbox" [checked]="false" (change)="inputChange($event)">
+        <span>upload company document</span>
+        <span class="checkmark"></span>
+    </label>
+    <div class="row mx-0 pt-4" *ngIf="checkbox">
+        <div class="col-lg-8 px-0 col-12">
+            <p class="fs-7">
+                Please upload the necessary documents required for the creation of office !!!
+                You can also add other supportive documents by clicking the button ( Add a Row )
+            </p>
+        </div>
+        <div class="col-lg-4 px-0 d-flex align-items-lg-end align-items-stretch flex-column col-12 pt-lg-0 pt-3">
+            <button class="btn-1 btn-1-size">Add a Row</button>
+        </div>
+    </div>
+</div>

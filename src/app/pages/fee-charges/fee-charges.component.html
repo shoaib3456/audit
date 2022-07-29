@@ -1,0 +1,145 @@
+<div class="body">
+    <div class="d-flex flex-lg-row flex-column w-100 ">
+        <app-sidebar [showSidebar]="show"  (changeSidebar)="toogelSidebar($event)" class="side-col "></app-sidebar>
+        <div class="main-col my-3 order-2">
+            <div class="card py-5 px-4 h-100 card-main">
+                <h1 class="fw-700 text-dark">Fee Charges</h1>
+                <div class="table-scroll">
+                    <div class="ws-table mt-5">
+                        <div class="ws-table-head row mx-0  border-bottom-2">
+                            <div class="col-2 text-center text-light py-3  fw-500 ">Standard</div>
+                            <div class="col-2 text-center text-light py-3 border-left-2 fw-500 ">Audit Type</div>
+                            <div class="col-3 text-center text-light py-3 border-left-2 fw-500 ">Amount <code
+                                    class="text-light fs-6">/</code>Percentage</div>
+                            <div class="col-5 text-center text-light py-3 border-left-2 fw-500 ">Fee</div>
+                        </div>
+                        <div class="ws-td row mx-0  border-bottom-2 py-4">
+                            <div class="col-2  text-faded-2 d-flex align-items-center"></div>
+                            <div class="col-2  text-faded-2 d-flex align-items-center"></div>
+                            <div class="col-3  d-flex align-items-center ">
+                                <div class="dropdown ws-drop-table">
+                                    <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Amount Percentage
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                        <li><a class="dropdown-item" href="#">10%</a></li>
+                                        <li><a class="dropdown-item" href="#">20%</a></li>
+                                        <li><a class="dropdown-item" href="#">30%</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-5 d-flex align-items-center">
+                                <div class="row mx-0">
+                                    <div class="col-4">
+                                        <div class="dropdown ws-drop-table">
+                                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Currency
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">10%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">30%</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-4 text-center text-faded-2">
+                                        <span>Amount</span>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="dropdown ws-drop-table">
+                                            <a class=" dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                Criteria
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                                <li><a class="dropdown-item" href="#">10%</a></li>
+                                                <li><a class="dropdown-item" href="#">20%</a></li>
+                                                <li><a class="dropdown-item" href="#">30%</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ws-td row mx-0  border-bottom-2 py-4">
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Wrap</div>
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Initial</div>
+                            <div class="col-3 text-faded-2 d-flex align-items-center ">Amount</div>
+                            <div class="col-5 text-faded-2 d-flex align-items-center">
+                                <div class="row mx-0 w-100">
+                                    <div class="col-4">
+                                        US $
+                                    </div>
+                                    <div class="col-4">
+                                        100
+                                    </div>
+                                    <div class="col-4">
+                                        Per Audition
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ws-td row mx-0  border-bottom-2 py-4">
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Wrap</div>
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Initial</div>
+                            <div class="col-3 text-faded-2 d-flex align-items-center ">Amount</div>
+                            <div class="col-5 text-faded-2 d-flex align-items-center">
+                                <div class="row mx-0 w-100">
+                                    <div class="col-4">
+                                        US $
+                                    </div>
+                                    <div class="col-4">
+                                        100
+                                    </div>
+                                    <div class="col-4">
+                                        Per Audition
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ws-td row mx-0  border-bottom-2 py-4">
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Wrap</div>
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Initial</div>
+                            <div class="col-3 text-faded-2 d-flex align-items-center ">Amount</div>
+                            <div class="col-5 text-faded-2 d-flex align-items-center">
+                                <div class="row mx-0 w-100">
+                                    <div class="col-4">
+                                        US $
+                                    </div>
+                                    <div class="col-4">
+                                        100
+                                    </div>
+                                    <div class="col-4">
+                                        Per Audition
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ws-td row mx-0  border-bottom-2 py-4">
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Wrap</div>
+                            <div class="col-2 text-faded-2 d-flex align-items-center">Initial</div>
+                            <div class="col-3 text-faded-2 d-flex align-items-center ">Amount</div>
+                            <div class="col-5 text-faded-2 d-flex align-items-center">
+                                <div class="row mx-0 w-100">
+                                    <div class="col-4">
+                                        US $
+                                    </div>
+                                    <div class="col-4">
+                                        100
+                                    </div>
+                                    <div class="col-4">
+                                        Per Audition
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-aside [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="aside-col order-lg-3 order-1 ">
+        </app-aside>
+    </div>
+</div>

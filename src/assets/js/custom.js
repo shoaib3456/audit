@@ -27,6 +27,13 @@ const handelSidebar = () => {
         })
     }
 }
+document.querySelectorAll('.form-input').forEach(element => {
+    console.log(element);
+    element.onclick = () =>{
+        element.parentElement.querySelector('select').click()
+    }
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     handelSidebar();
 });
@@ -34,5 +41,7 @@ window.onresize = () => {
     handelSidebar();
     console.log("hiii");
 }
+
+
 // DOMContentLoaded  end
 

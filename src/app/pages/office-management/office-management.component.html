@@ -1,0 +1,47 @@
+<div class="body">
+    <div class="d-flex flex-lg-row flex-column w-100 ">
+        <app-sidebar [showSidebar]="show"  (changeSidebar)="toogelSidebar($event)" class="side-col "></app-sidebar>
+        <div class="main-col my-3 order-2">
+            <div class="card py-5 px-4 h-100 card-main">
+                <h1 class="fw-700 text-dark">Office Management</h1>
+                <div class="ws-table mt-5">
+                    <div class="ws-table-head row mx-0  border-bottom-2">
+                        <div class="col-lg-4 col-3 text-light py-3  fw-500 ps-lg-4">Office Name</div>
+                        <div class="col-lg-4 col-3 text-light py-3 border-left-2 fw-500 ps-lg-4">Office Type</div>
+                        <div class="col-lg-4 col-6 text-light py-3  border-left-2 fw-500 ps-lg-4">Complete Setup</div>
+                    </div>
+                    <div class="ws-td row mx-0  border-bottom-2 py-4">
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local Office</div>
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local</div>
+                        <div class="col-lg-4 col-6 text-light d-flex align-items-center fw-500 ps-lg-4">
+                            <button class="btn-1">Resume Setup Completition</button>
+                        </div>
+                    </div>
+                    <div class="ws-td row mx-0  border-bottom-2 py-4">
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local Office</div>
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local</div>
+                        <div class="col-lg-4 col-6 text-light d-flex align-items-center fw-500 ps-lg-4">
+                            <button class="btn-1">Resume Setup Completition</button>
+                        </div>
+                    </div>
+                    <div class="ws-td row mx-0  border-bottom-2 py-4">
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local Office</div>
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local</div>
+                        <div class="col-lg-4 col-6 text-light d-flex align-items-center fw-500 ps-lg-4">
+                            <button class="btn-1">Resume Setup Completition</button>
+                        </div>
+                    </div>
+                    <div class="ws-td row mx-0  border-bottom-2 py-4">
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local Office</div>
+                        <div class="col-lg-4 col-3 text-faded-2 d-flex align-items-center ps-lg-4">Local</div>
+                        <div class="col-lg-4 col-6 text-light d-flex align-items-center fw-500 ps-lg-4">
+                            <button class="btn-1">Resume Setup Completition</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-aside [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="aside-col order-lg-3 order-1 ">
+        </app-aside>
+    </div>
+</div>
