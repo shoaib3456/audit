@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadofficeSetupComponent implements OnInit {
 
-  currentTab : number = 5
+  currentTab : number = 1
   
   next(){
     if(this.currentTab < 5){
