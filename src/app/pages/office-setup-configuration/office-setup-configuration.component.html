@@ -1,0 +1,75 @@
+<div class="body">
+    <div class="d-flex flex-lg-row flex-column w-100 ">
+        <app-sidebar [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="side-col "></app-sidebar>
+        <div class="main-col my-3 order-2">
+            <div class="card py-5 px-4 h-100 card-main">
+                <h1 class="fw-700 text-dark">Office Setup Configuration</h1>
+                <div class="row mx-0 mt-5">
+                    <div class="col-12 px-0 d-flex flex-column">
+                        <span class="fs-5 fw-900 text-dark">Office Onboarding Documents :</span>
+                        <p>Please upload the necessary documents required for the creation on office !!!</p>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Document Name</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Text">
+                        </div>
+                    </div>
+           
+                    <div class=" col-12 px-0 py-3 d-flex align-items-lg-center flex-lg-row flex-column  ">
+                        <p class="mb-lg-0 mb-2">Is this document necessary or optional to upload ?</p>
+                        <div class="d-flex align-items-lg-center ">
+                            <span class="text-faded px-4">Optional</span>
+                            <mat-slide-toggle></mat-slide-toggle>
+                            <span class="text-faded px-4">Necessary</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-12 px-0 py-3 pt-4">
+                        <button class="btn-1 btn-1-size">Add </button>
+                    </div>
+
+                    <div class="table-scroll px-0">
+                        <div class="ws-table mt-5">
+                            <div class="ws-table-head row mx-0  border-bottom-2">
+                                <div class="col-8 ps-lg-5 ps-2  text-light py-3  fw-500 ">Document Name</div>
+                                <div class="col-4 ps-lg-5 ps-2  text-light py-3 border-left-2 fw-500 ">Requirement Type</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-8 ps-lg-5 ps-2 fw-500 text-faded ">Company Registration Certificate</div>
+                                <div class="col-4 ps-lg-5 ps-2 fw-500 text-faded ">Necessary</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-8 ps-lg-5 ps-2 fw-500 text-faded ">Business Agreement</div>
+                                <div class="col-4 ps-lg-5 ps-2 fw-500 text-faded ">Optional</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-8 ps-lg-5 ps-2 fw-500 text-faded ">Company Registration Certificate</div>
+                                <div class="col-4 ps-lg-5 ps-2 fw-500 text-faded ">Necessary</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-8 ps-lg-5 ps-2 fw-500 text-faded ">Business Agreement</div>
+                                <div class="col-4 ps-lg-5 ps-2 fw-500 text-faded ">Optional</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-8 ps-lg-5 ps-2 fw-500 text-faded ">Company Registration Certificate</div>
+                                <div class="col-4 ps-lg-5 ps-2 fw-500 text-faded ">Necessary</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-8 ps-lg-5 ps-2 fw-500 text-faded ">Business Agreement</div>
+                                <div class="col-4 ps-lg-5 ps-2 fw-500 text-faded ">Optional</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 d-flex align-items-center justify-content-center pagination py-5 ">
+                        <span class="active">01</span>
+                        <span class="">02</span>
+                        <span class="">03</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <app-aside [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="aside-col order-lg-3 order-1 ">
+        </app-aside>
+    </div>
+</div>

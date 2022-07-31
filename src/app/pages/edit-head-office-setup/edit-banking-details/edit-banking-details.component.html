@@ -1,0 +1,115 @@
+<div class="body">
+    <div class="d-flex flex-lg-row flex-column w-100 ">
+        <app-sidebar-edit [showSidebar]="show"  (changeSidebar)="toogelSidebar($event)" class="side-col "></app-sidebar-edit>
+        <div class="main-col my-3 order-2">
+            <div class="card py-5 px-4 h-100 card-main">
+                <h1 class="fw-700 text-dark pb-4 mb-4 border-bottom">Head Office Configuration</h1>
+                <h2 class="fw-700 text-dark w-100 text-center">Banking Details</h2>
+                <div class="row mx-0 pt-4">
+                    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Account Title</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex pb-lg-0 pb-2 ">Account No.</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Bank Name</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Bank Address</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter">
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex flex-column pb-lg-0 pb-2 ">
+                            City
+                        </span>
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">
+                            Country<i class="fa fa-asterisk text-danger fs-12"></i>
+                        </span>
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex flex-column pb-lg-0 pb-2 ">
+                            State
+                            <span class="d-flex ">
+                                Province
+                                <i class="fa fa-asterisk text-danger fs-12"></i>
+                            </span>
+                        </span>
+                
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">SWIT Code</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex pb-lg-0 pb-2 ">IBAN No.</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Local Wire Transfer Detail</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">International Wire Transfer Detail</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                </div>
+                <div class="w-100 d-flex justify-content-end py-4">
+                    <button class=" btn-1 btn-1-size">
+                        Save
+                    </button>
+                </div>
+            </div>
+        </div>
+        <app-aside [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="aside-col order-lg-3 order-1 ">
+        </app-aside>
+    </div>
+</div>

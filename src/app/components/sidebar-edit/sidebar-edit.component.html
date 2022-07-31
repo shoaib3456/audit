@@ -1,0 +1,61 @@
+<div class="w-100">
+    <nav class="sidebar px-3 pt-5 pb-3 " [class.closesidebar]="showSidebar == true"
+        [class.opensidebar]="showSidebar == false">
+        <div class="d-flex align-items-center justify-content-between ps-4">
+            <a href="" class="navbar-brand"><img src="../../../assets/images/logo.png" alt=""></a>
+            <i (click)="toogleSidebar()" class="fa  fa-times d-lg-none d-block px-4 pb-2 pointer fs-4 text-faded-2"></i>
+        </div>
+        <ul class="nav flex-column pt-5">
+            <li class="nav-item">
+                <a class="nav-link  d-flex align-items-center " routerLinkActive="active" [routerLinkActiveOptions]="{exact:
+                    true}" routerLink="/head-office">
+                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                    <span class="pt-1">Head Office Information</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/head-office/document">
+                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                    <span class="pt-1">Company Document</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/head-office/departments">
+                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                    <span class="pt-1">Departments</span>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a routerLinkActive="active" routerLink="/head-office/head-of-office" class="nav-link  d-flex align-items-center ">
+                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                    <span class="pt-1">Head Of Office</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link  d-flex align-items-center " routerLinkActive="active"
+                    routerLink="/head-office/banking-details">
+                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                    <span class="pt-1">Banking Details</span>
+                </a>
+            </li>
+        </ul>
+        <div class="d-flex flex-column ps-4 pt-5 pb-5">
+            <span class="text-faded-2 fs-11 pb-4">Lorem Ipsum</span>
+            <a class=" d-flex align-items-center " href="#">
+                <i class="far fa-envelope text-dark fs-5 pe-2"></i>
+                <span class="pt-1 col fw-600 fs-7 text-dark ps-1">Messages</span>
+                <span class="ws-rounded-badge"><span class="text-light pt-1">6</span> </span>
+            </a>
+            <a class=" d-flex align-items-center pt-3 " href="#">
+                <i class="far fa-bookmark text-dark fs-5 pe-2"></i>
+                <span class="pt-1 col fw-600 fs-7 text-dark ps-2">Lorem Ipsum</span>
+            </a>
+        </div>
+        <div class="card mt-5 d-lg-flex d-none flex-column align-items-center">
+            <img src="../../../assets/images/rocket.png" class="w-75 rocket" alt="">
+            <a href="" class="pt-4 text-primary">Lorem Ipsum <i class="fa fa-arrow-right text-primary fs-7 ps-2"></i>
+            </a>
+        </div>
+    </nav>
+</div>

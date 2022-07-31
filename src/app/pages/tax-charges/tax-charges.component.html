@@ -1,0 +1,102 @@
+<div class="body">
+    <div class="d-flex flex-lg-row flex-column w-100 ">
+        <app-sidebar [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="side-col "></app-sidebar>
+        <div class="main-col my-3 order-2">
+            <div class="card py-5 px-4 h-100 card-main">
+                <h1 class="fw-700 text-dark">Tax Charges</h1>
+
+                <div class="row mx-0 mt-5">
+                    <div class="col-lg-7 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 pt-lg-4 form-split-label">Tax Type</span>
+                        <div class="col d-flex flex-column ms-lg-3">
+                            <span class="text-primary py-2 fw-600"> <i class="fa fa-circle text-primary mx-3"></i>
+                                Service Tax</span>
+                            <div class="form-input d-flex align-items-center col">
+                                <select name="" id="">
+                                    <option value="">Select Service</option>
+                                    <option value="">Select 1</option>
+                                    <option value="">Select 2</option>
+                                    <option value="">Select 3</option>
+                                </select>
+                                <i class="fa fa-angle-down arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-3">
+                        <div class="col d-flex flex-column">
+                            <span class="text-primary py-2 fw-600"> <i class="fa fa-circle text-primary mx-3"></i> Area
+                                Wise Tax</span>
+                            <div class="form-input d-flex align-items-center col">
+                                <select name="" id="">
+                                    <option value="">State/Province</option>
+                                    <option value="">Select 1</option>
+                                    <option value="">Select 2</option>
+                                    <option value="">Select 3</option>
+                                </select>
+                                <i class="fa fa-angle-down arrow-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">Tax Name</span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Text">
+                        </div>
+                    </div>
+                    <div class="col-lg-7 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                        <span class="d-flex pb-lg-0 pb-2 form-split-label">
+                            Tax Calculation
+                            Formula
+                        </span>
+                        <div class="form-input col ms-lg-3">
+                            <input type="text" placeholder="Enter Number">
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
+                        <span class="d-flex pb-lg-0 pb-2 "><code class="text-dark fs-6 px-1 text-faded"> % </code> of
+                        </span>
+                        <div class="form-input d-flex align-items-center col ms-lg-3">
+                            <select name="" id="">
+                                <option value="">Select</option>
+                                <option value="">Select 1</option>
+                                <option value="">Select 2</option>
+                                <option value="">Select 3</option>
+                            </select>
+                            <i class="fa fa-angle-down arrow-down"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 px-0 py-3">
+                        <button class="btn-1 btn-1-size">Add Tax</button>
+                    </div>
+
+                    <div class="table-scroll px-0">
+                        <div class="ws-table mt-5">
+                            <div class="ws-table-head row mx-0  border-bottom-2">
+                                <div class="col-3 ps-lg-5 ps-2  text-light py-3  fw-500 ">Tax Name</div>
+                                <div class="col-3 ps-lg-5 ps-2  text-light py-3 border-left-2 fw-500 ">Tax Type</div>
+                                <div class="col-3 ps-lg-5 ps-2  text-light py-3 border-left-2 fw-500 ">Tax Formula</div>
+                                <div class="col-3 ps-lg-5 ps-2  text-light py-3 border-left-2 fw-500 ">States Application</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">Service Tax</div>
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">Service</div>
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">15% of Audit fee</div>
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">Sindh,Punjab</div>
+                            </div>
+                            <div class="ws-td row mx-0 pt-4 ">
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">Service Tax</div>
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">Service</div>
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">15% of Audit fee</div>
+                                <div class="col-3 ps-lg-5 ps-2 fw-500 text-faded ">Sindh,Punjab</div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <app-aside [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="aside-col order-lg-3 order-1 ">
+        </app-aside>
+    </div>
+</div>

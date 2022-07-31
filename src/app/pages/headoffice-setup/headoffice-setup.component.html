@@ -36,7 +36,7 @@
                     </div>
                     <div>
                         <button class="btn-1 btn-1-size" *ngIf="currentTab < 5" (click)="next()">Next</button>
-                        <a routerLink="/fee-charges" class="btn-1 btn-1-size text-light" *ngIf="currentTab == 5">Complete</a>
+                        <a routerLink="/fee-charges" class="btn-1 btn-1-size text-light" *ngIf="currentTab == 5">Save</a>
                     </div>
                 </div>
             </div>
@@ -58,10 +58,9 @@
                         <img src="../../../assets/images/avater.png" alt="">
                         <img src="../../../assets/images/arrow-down.png" alt="">
                     </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+                        <li><a  class=""  routerLink="/head-office">Head Office </a></li>
+                        <li><a class="" href="#">Logout</a></li>
                     </ul>
                 </div>
             </div>

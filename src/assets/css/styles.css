@@ -320,7 +320,12 @@ option {
 }
 
 .form-split-label {
-    width: 90px;
+    width: 110px;
+}
+@media (max-width:991px) {
+    .form-split-label{
+        width: 100%;
+    }
 }
 
 /* The container */
@@ -497,3 +502,49 @@ option {
     color: #898989;
     font-weight: 500;
 }
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb{
+    background-color: var(--primary-color);
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar{
+    background-color: #b1c3db;
+}
+.pagination span{
+    padding-left: 15px ;
+    color: rgba(0, 0, 0, 0.349);
+    font-size: 13px;
+}
+.pagination span.active{
+    background-color: var(--primary-color);
+    width: 41px;
+    height: 41px;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding-left: 0;
+    
+}
+.dropdown-menu{
+    padding: 0;
+    border: none;
+    box-shadow:0px 0px 20px 1px rgba(0, 0, 0, 0.123) ;
+    padding: 5px 0px;
+}
+.dropdown-menu li{
+    padding: 6px  ;
+    display: flex;
+}
+.dropdown-menu li:hover{
+    background-color: var(--primary-color);
+}
+.dropdown-menu a{
+    width: 100%;
+    padding: 0 15px;
+}
+.dropdown-menu li:hover a{
+    color:white !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
