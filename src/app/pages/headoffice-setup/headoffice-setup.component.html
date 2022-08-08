@@ -1,34 +1,14 @@
 <div class="body">
-    <div class="d-flex flex-lg-row flex-column w-100 ">
-        <div class="side-col">
-            <div class="w-100">
-                <nav class="sidebar px-3 pt-5 pb-3 ">
-                    <div class="d-flex align-items-center justify-content-between ps-4">
-                        <a href="" class="navbar-brand"><img src="../../../assets/images/logo.png" alt=""></a>
-                    </div>
-                </nav>
-            </div>
-        </div>
+    <div class="d-flex flex-lg-row flex-column w-100 blured-parent">
+        <app-sidebar [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="side-col "></app-sidebar>
         <div class="main-col my-3 order-2">
             <div class="card py-5 px-4 h-100 card-main">
-                <h1 class="fw-700 text-dark col-lg-9 col-12">Welcome you’re 5 minutes away from Head Office Setup</h1>
-                <div
-                    class="border-top border-bottom py-4 my-4 d-flex align-items-center justify-content-between pe-lg-4">
-                    <span class="text-faded" [className]="currentTab == 1 ? 'btn-1' : 'text-faded'"> Head Office
-                        Informartion</span>
-                    <span class="text-faded" [className]="currentTab == 2 ? 'btn-1' : 'text-faded'"> Company Document
-                    </span>
-                    <span class="text-faded" [className]="currentTab == 3 ? 'btn-1' : 'text-faded'">Department </span>
-                    <span class="text-faded" [className]="currentTab == 4 ? 'btn-1' : 'text-faded'">Head of Office
-                    </span>
-                    <span class="text-faded" [className]="currentTab == 5 ? 'btn-1' : 'text-faded'"> Banking Detail
-                    </span>
-                </div>
+                <h1 class="fw-700 text-dark col-lg-9 col-12 pb-4 border-bottom mb-4 w-100">Welcome you’re 5 minutes away from Head Office Setup</h1>
                 <app-head-office-information *ngIf="currentTab == 1"></app-head-office-information>
-                <app-upload-company-document *ngIf="currentTab == 2"></app-upload-company-document>
-                <app-department *ngIf="currentTab == 3"></app-department>
-                <app-head-of-office *ngIf="currentTab == 4"></app-head-of-office>
-                <app-banking-detail *ngIf="currentTab == 5"></app-banking-detail>
+                <app-head-of-office *ngIf="currentTab == 2"></app-head-of-office>
+                <app-banking-detail *ngIf="currentTab == 3"></app-banking-detail>
+                <app-audit-fee-charges *ngIf="currentTab == 4"></app-audit-fee-charges>
+                <app-tax-details *ngIf="currentTab == 5"></app-tax-details>
                 <div class="border-top mt-4 pt-4 d-flex justify-content-between">
                     <div>
                         <button *ngIf="currentTab > 1 " class="btn-gray px-5 btn-1-size"
@@ -36,34 +16,40 @@
                     </div>
                     <div>
                         <button class="btn-1 btn-1-size" *ngIf="currentTab < 5" (click)="next()">Next</button>
-                        <a routerLink="/fee-charges" class="btn-1 btn-1-size text-light" *ngIf="currentTab == 5">Save</a>
+                        <a routerLink="/fee-charges" class="btn-1 btn-1-size text-light"
+                            *ngIf="currentTab == 5">Save</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="aside-col order-lg-3 order-1">
-            <div class="d-flex justify-content-between align-items-center pt-lg-5 pt-4 px-4">
+        <app-aside [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="aside-col order-lg-3 order-1 ">
+            <div class="d-lg-flex d-none flex-column mt-lg-5 aside-steps">
                 <div class="d-flex align-items-center">
-                    <div class="notification">
-                        <mat-icon class="mat-icon">notifications_none</mat-icon>
-                        <span>2</span>
-                    </div>
-                    <div>
-                        <mat-icon class="ms-3">settings</mat-icon>
-                    </div>
+                    <span [className]="currentTab == 1 ? 'small-dot active' : 'small-dot'" ></span>
+                    <span [className]="currentTab == 1 ? 'check-dot active' : 'check-dot'" ><i class="fa fa-check"></i></span>
+                    <span>Head Office Informartion</span>
                 </div>
-                <div class="dropdown">
-                    <button class=" dropdown-toggle avater-drop" type="button" id="dropdownMenuButton1"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="../../../assets/images/avater.png" alt="">
-                        <img src="../../../assets/images/arrow-down.png" alt="">
-                    </button>
-                    <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
-                        <li><a  class=""  routerLink="/head-office">Head Office </a></li>
-                        <li><a class="" href="#">Logout</a></li>
-                    </ul>
+                <div class="d-flex align-items-center pt-4 mt-3">
+                    <span [className]="currentTab == 2 ? 'small-dot active' : 'small-dot'"></span>
+                    <span [className]="currentTab == 2 ? 'check-dot active' : 'check-dot'"><i class="fa fa-check"></i></span>
+                    <span>Head Of Office</span>
+                </div>
+                <div class="d-flex align-items-center pt-4 mt-3">
+                    <span [className]="currentTab == 3 ? 'small-dot active' : 'small-dot'"></span>
+                    <span [className]="currentTab == 3 ? 'check-dot active' : 'check-dot'"><i class="fa fa-check"></i></span>
+                    <span>Banking Details</span>
+                </div>
+                <div class="d-flex align-items-center pt-4 mt-3">
+                    <span [className]="currentTab == 4 ? 'small-dot active' : 'small-dot'"></span>
+                    <span [className]="currentTab == 4 ? 'check-dot active' : 'check-dot'"><i class="fa fa-check"></i></span>
+                    <span>Audit Fee Charges</span>
+                </div>
+                <div class="d-flex align-items-center pt-4 mt-3">
+                    <span [className]="currentTab == 5 ? 'small-dot active' : 'small-dot'"></span>
+                    <span [className]="currentTab == 5 ? 'check-dot active' : 'check-dot'"><i class="fa fa-check"></i></span>
+                    <span>Tax Details</span>
                 </div>
             </div>
-        </div>
+        </app-aside>
     </div>
 </div>

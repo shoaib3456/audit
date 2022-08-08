@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BankingDetailComponent implements OnInit {
 
+
+  isTableShow :boolean = false
+
+  tableShow (){
+    this.isTableShow = true;
+  }
   constructor() { }
 
   ngOnInit(): void {

@@ -5,58 +5,61 @@
             <a href="" class="navbar-brand"><img src="../../../assets/images/logo.png" alt=""></a>
             <i (click)="toogleSidebar()" class="fa  fa-times d-lg-none d-block px-4 pb-2 pointer fs-4 text-faded-2"></i>
         </div>
-        <ul class="nav flex-column pt-5">
-            <li class="nav-item">
-                <a class="nav-link  d-flex align-items-center " href="#">
-                    <i class="fa fa-home fs-5 pe-2"></i>
-                    <span class="pt-1">Dashboard</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/fee-charges">
-                    <i class="far fa-file-alt fs-5 pe-3"></i>
-                    <span class="pt-1">Fee Charges</span>
-                </a>
-            </li>
+        <div class="blured-area">
+            <ul class="nav flex-column pt-5">
+                <li class="nav-item">
+                    <a class="nav-link  d-flex align-items-center " href="#">
+                        <i class="fa fa-home fs-5 pe-2"></i>
+                        <span class="pt-1">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/fee-charges">
+                        <i class="far fa-file-alt fs-5 pe-3"></i>
+                        <span class="pt-1">Fee Charges</span>
+                    </a>
+                </li>
 
-            <li class="nav-item">
-                <a routerLinkActive="active" routerLink="/tax-charges" class="nav-link  d-flex align-items-center ">
-                    <i class="far fa-file-alt fs-5 pe-3"></i>
-                    <span class="pt-1">Tax Charges</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  d-flex align-items-center " routerLinkActive="active"
-                    routerLink="/office-management">
-                    <i class="far fa-file-alt fs-5 pe-3"></i>
-                    <span class="pt-1">Office Management</span>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  d-flex align-items-center " href="#">
-                    <i class="far fa-file-alt fs-5 pe-3"></i>
-                    <span class="pt-1 col">Setup Configuration</span>
-                    <i class="fa fa-arrow-right fs-7"></i>
-                </a>
-                <ul class="submenu dropdown-menu">
-                    <div class="submenu-inner ms-lg-4 mt-lg-0 mt-4">
-                        <li class="nav-item">
-                            <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/setup-configuration" href="#">
-                                <i class="far fa-file-alt fs-5 pe-3"></i>
-                                <span class="pt-1">Office</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link  d-flex align-items-center " routerLinkActive="active" routerLink="/setup-configuration-employee" >
-                                <i class="far fa-file-alt fs-5 pe-3"></i>
-                                <span class="pt-1">Employee</span>
-                            </a>
-                        </li>
-                    </div>
-                </ul>
-            </li>
+                <li class="nav-item">
+                    <a routerLinkActive="active" routerLink="/tax-charges" class="nav-link  d-flex align-items-center ">
+                        <i class="far fa-file-alt fs-5 pe-3"></i>
+                        <span class="pt-1">Tax Charges</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  d-flex align-items-center " routerLinkActive="active"
+                        routerLink="/office-management">
+                        <i class="far fa-file-alt fs-5 pe-3"></i>
+                        <span class="pt-1">Office Management</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  d-flex align-items-center ">
+                        <i class="far fa-file-alt fs-5 pe-3"></i>
+                        <span class="pt-1 col">Setup Configuration</span>
+                        <i class="fa fa-arrow-right fs-7"></i>
+                    </a>
+                    <ul class="submenu dropdown-menu">
+                        <div class="submenu-inner ms-lg-4 mt-lg-0 mt-4">
+                            <li class="nav-item">
+                                <a class="nav-link  d-flex align-items-center " routerLinkActive="active"
+                                    routerLink="/setup-configuration" href="#">
+                                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                                    <span class="pt-1">Office</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  d-flex align-items-center " routerLinkActive="active"
+                                    routerLink="/setup-configuration-employee">
+                                    <i class="far fa-file-alt fs-5 pe-3"></i>
+                                    <span class="pt-1">Employee</span>
+                                </a>
+                            </li>
+                        </div>
+                    </ul>
+                </li>
 
-            <!-- <li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link  d-flex align-items-center " href="#">
                     <i class="far fa-file-alt fs-5 pe-3"></i>
                     <span class="pt-1 col">Head Office Setup</span>
@@ -109,23 +112,25 @@
                 </ul>
             </li> -->
 
-        </ul>
-        <div class="d-flex flex-column ps-4 pt-5 pb-5">
-            <span class="text-faded-2 fs-11 pb-4">Lorem Ipsum</span>
-            <a class=" d-flex align-items-center " href="#">
-                <i class="far fa-envelope text-dark fs-5 pe-2"></i>
-                <span class="pt-1 col fw-600 fs-7 text-dark ps-1">Messages</span>
-                <span class="ws-rounded-badge"><span class="text-light pt-1">6</span> </span>
-            </a>
-            <a class=" d-flex align-items-center pt-3 " href="#">
-                <i class="far fa-bookmark text-dark fs-5 pe-2"></i>
-                <span class="pt-1 col fw-600 fs-7 text-dark ps-2">Lorem Ipsum</span>
-            </a>
-        </div>
-        <div class="card mt-5 d-lg-flex d-none flex-column align-items-center">
-            <img src="../../../assets/images/rocket.png" class="w-75 rocket" alt="">
-            <a href="" class="pt-4 text-primary">Lorem Ipsum <i class="fa fa-arrow-right text-primary fs-7 ps-2"></i>
-            </a>
+            </ul>
+            <div class="d-flex flex-column ps-4 pt-5 pb-5">
+                <span class="text-faded-2 fs-11 pb-4">Lorem Ipsum</span>
+                <a class=" d-flex align-items-center " href="#">
+                    <i class="far fa-envelope text-dark fs-5 pe-2"></i>
+                    <span class="pt-1 col fw-600 fs-9 text-dark ps-1">Messages</span>
+                    <span class="ws-rounded-badge"><span class="text-light pt-1">6</span> </span>
+                </a>
+                <a class=" d-flex align-items-center pt-3 " href="#">
+                    <i class="far fa-bookmark text-dark fs-5 pe-2"></i>
+                    <span class="pt-1 col fw-600 fs-9 text-dark ps-2">Lorem Ipsum</span>
+                </a>
+            </div>
+            <div class="card mt-5 d-lg-flex d-none flex-column align-items-center">
+                <img src="../../../assets/images/rocket.png" class="w-75 rocket" alt="">
+                <a href="" class="pt-4 text-primary">Lorem Ipsum <i
+                        class="fa fa-arrow-right text-primary fs-7 ps-2"></i>
+                </a>
+            </div>
         </div>
     </nav>
 </div>

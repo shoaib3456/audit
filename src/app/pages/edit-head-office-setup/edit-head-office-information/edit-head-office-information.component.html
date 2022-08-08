@@ -5,6 +5,7 @@
             <div class="card py-5 px-4 h-100 card-main">
                 <h1 class="fw-700 text-dark pb-4 mb-4 border-bottom">Head Office Configuration</h1>
                 <h2 class="fw-700 text-dark w-100 text-center">Head Office Information</h2>
+                
                 <div class="row mx-0 pt-4">
                     <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
                         <span class="d-flex pb-lg-0 pb-2 form-split-label">Office Name <i
@@ -91,7 +92,7 @@
                         </div>
                     </div>
                 
-                    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                    <div class="col-lg-9 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
                         <span class="d-flex flex-column pb-lg-0 pb-2 form-split-label">
                             Contract
                             <span class="d-flex ">
@@ -100,18 +101,7 @@
                             </span>
                         </span>
                         <div class="form-input d-flex align-items-center col ms-lg-3">
-                            <select name="" id="">
-                                <option value="">Country + Area Code</option>
-                                <option value="">Select 1</option>
-                                <option value="">Select 2</option>
-                                <option value="">Select 3</option>
-                            </select>
-                            <i class="fa fa-angle-down arrow-down"></i>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-3">
-                        <div class="form-input col ">
-                            <input type="text" placeholder="Enter Number">
+                            <input type="text"   [ng2TelInputOptions]="{initialCountry: 'pk'}" ng2TelInput />    
                         </div>
                     </div>
                     <div class="col-lg-3 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-3">
@@ -119,25 +109,13 @@
                             <input type="text" class="text-center" placeholder="Ext">
                         </div>
                     </div>
-                    <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
+                    <div class="col-lg-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
                         <span class="d-flex  pb-lg-0 pb-2 form-split-label">
                             Cell No.
                             <i class="fa fa-asterisk text-danger fs-12"></i>
                         </span>
                         <div class="form-input d-flex align-items-center col ms-lg-3">
-                            <select name="" id="">
-                                <option value="">Country Code</option>
-                                <option value="">Select 1</option>
-                                <option value="">Select 2</option>
-                                <option value="">Select 3</option>
-                            </select>
-                            <i class="fa fa-angle-down arrow-down"></i>
-                        </div>
-                    </div>
-                
-                    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-3">
-                        <div class="form-input col ">
-                            <input type="text" placeholder="Enter Number">
+                            <input type="text"   [ng2TelInputOptions]="{initialCountry: 'pk'}" ng2TelInput />    
                         </div>
                     </div>
                 

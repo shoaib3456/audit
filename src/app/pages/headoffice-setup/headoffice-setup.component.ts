@@ -7,6 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadofficeSetupComponent implements OnInit {
 
+
+  show :boolean = true;
+  toogelSidebar(data :boolean){
+    this.show = data
+  }
+
+
   currentTab : number = 1
   
   next(){

@@ -11,23 +11,23 @@
             <mat-icon class="ms-3">settings</mat-icon>
         </div>
     </div>
-    <div class="dropdown">
+    <div class="dropdown ">
         <button class=" dropdown-toggle avater-drop" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
             aria-expanded="false">
             <img src="../../../assets/images/avater.png" alt="">
             <img src="../../../assets/images/arrow-down.png" alt="">
         </button>
-        <ul class="dropdown-menu " aria-labelledby="dropdownMenuButton1">
+        <ul class="dropdown-menu user-dropdown" aria-labelledby="dropdownMenuButton1">
             <li><a  class=""  routerLink="/head-office">Head Office </a></li>
             <li><a class="" href="#">Logout</a></li>
         </ul>
     </div>
 </div>
-
-<div class="d-flex flex-column pt-5 px-4">
+<ng-content></ng-content>
+<!-- <div class="d-flex flex-column pt-5 px-4">
     <a href="" class="d-flex align-items-center text-primary">Lorem Ipsum <mat-icon class="ms-3 text-primary">more_horiz
         </mat-icon> </a>
-    <h2 class="text-dark fw-900 py-3">
+    <h2 class="text-dark fw-700 py-3">
         Lorem Ipsum
         simply dummy
         text
@@ -46,4 +46,4 @@
         </a>
     </div>
 
-</div>
+</div> -->

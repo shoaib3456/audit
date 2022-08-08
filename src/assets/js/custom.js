@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 window.onresize = () => {
     handelSidebar();
-    console.log("hiii");
 }
 
 

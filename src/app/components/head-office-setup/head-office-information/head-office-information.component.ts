@@ -7,7 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadOfficeInformationComponent implements OnInit {
 
-  constructor() { }
+
+  getNumber($event : any){
+    console.log($event);
+  }
+
+  constructor() {
+    
+   }
+
+   
+
+  onCountryChange($event : any){
+    console.log($event);
+  }
+  
+  
 
   ngOnInit(): void {
   }

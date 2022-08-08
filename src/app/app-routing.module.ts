@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from './pages/auth/login/login.component';
 import { EditBankingDetailsComponent } from './pages/edit-head-office-setup/edit-banking-details/edit-banking-details.component';
 import { EditCompanyDocumentComponent } from './pages/edit-head-office-setup/edit-company-document/edit-company-document.component';
 import { EditDepartmentsComponent } from './pages/edit-head-office-setup/edit-departments/edit-departments.component';
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:"tax-charges",component:TaxChargesComponent},
   {path:"setup-configuration",component:OfficeSetupConfigurationComponent},
   {path:"setup-configuration-employee",component:OfficeSetupConfigurationEmployeeComponent},
+  {path:"login",component:LoginComponent},
   {
     path:"head-office",
     component:EditHeadofficeSetupComponent,

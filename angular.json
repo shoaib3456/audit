@@ -24,11 +24,13 @@
             ],
             "styles": [
               "src/custom-theme.scss",
+              "node_modules/intl-tel-input/build/css/intlTelInput.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/css/styles.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
+              "node_modules/intl-tel-input/build/js/intlTelInput.min.js",
               "src/assets/js/custom.js"
             ]
           },

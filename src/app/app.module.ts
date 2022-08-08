@@ -2,10 +2,14 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import {FormsModule} from '@angular/forms'
+import {FormsModule,ReactiveFormsModule } from '@angular/forms'
+import {Ng2TelInputModule} from 'ng2-tel-input';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxMatSelectSearchModule } from 'ngx-mat-select-search';
+
+
+import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import {MatIconModule} from '@angular/material/icon';
 import { AsideComponent } from './components/aside/aside.component';
@@ -28,6 +32,10 @@ import { EditDepartmentsComponent } from './pages/edit-head-office-setup/edit-de
 import { EditHeadOfOfficeComponent } from './pages/edit-head-office-setup/edit-head-of-office/edit-head-of-office.component';
 import { EditBankingDetailsComponent } from './pages/edit-head-office-setup/edit-banking-details/edit-banking-details.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
+import { LoginComponent } from './pages/auth/login/login.component';
+import { SelectBoxComponent } from './components/select-box/select-box.component';
+import { AuditFeeChargesComponent } from './components/head-office-setup/audit-fee-charges/audit-fee-charges.component';
+import { TaxDetailsComponent } from './components/head-office-setup/tax-details/tax-details.component';
 
 
 @NgModule({
@@ -54,14 +62,21 @@ import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.com
     EditHeadOfOfficeComponent,
     EditBankingDetailsComponent,
     PageNotFoundComponent,
+    LoginComponent,
+    SelectBoxComponent,
+    AuditFeeChargesComponent,
+    TaxDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatIconModule,
+    MatSlideToggleModule,
+    Ng2TelInputModule ,
     FormsModule,
-    MatSlideToggleModule
+    ReactiveFormsModule,
+    NgxMatSelectSearchModule
   ],
   providers: [],
   bootstrap: [AppComponent]
