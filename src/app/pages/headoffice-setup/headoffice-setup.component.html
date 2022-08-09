@@ -3,7 +3,9 @@
         <app-sidebar [showSidebar]="show" (changeSidebar)="toogelSidebar($event)" class="side-col "></app-sidebar>
         <div class="main-col my-3 order-2">
             <div class="card py-5 px-4 h-100 card-main">
-                <h1 class="fw-700 text-dark col-lg-9 col-12 pb-4 border-bottom mb-4 w-100">Welcome you’re 5 minutes away from Head Office Setup</h1>
+                <div class=" d-flex border-bottom mb-4">
+                    <h2 class="fw-700 text-dark col-lg-9 col-12 pb-3  ">Welcome you’re 5 minutes away from Head Office Setup</h2>
+                </div>
                 <app-head-office-information *ngIf="currentTab == 1"></app-head-office-information>
                 <app-head-of-office *ngIf="currentTab == 2"></app-head-of-office>
                 <app-banking-detail *ngIf="currentTab == 3"></app-banking-detail>
