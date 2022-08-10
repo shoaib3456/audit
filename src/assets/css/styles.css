@@ -147,6 +147,7 @@ a {
 .body {
     background-color: #f6f6f5;
     min-height: 100vh;
+    overflow-y: hidden;
 }
 
 *::-webkit-scrollbar {
