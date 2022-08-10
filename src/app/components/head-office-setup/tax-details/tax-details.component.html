@@ -1,39 +1,33 @@
 <h2 class="fw-700 text-dark w-100 text-center col ">Tax Details</h2>
 <div class="row mx-0 pt-4">
-    <div class="col-12 d-flex pb-3 px-0">
-        <button class="btn-1  me-3 ">Tax Charges (Home Country)</button>
-        <button class="btn-1  me-3 ">Tax Charges (Foreign Country)</button>
+    <div class="col-12 align-items-center d-flex pb-3 px-0">
+        <span (click)="changeTab(1)" [className]="currentTab == 1 ? 'btn-1 pointer me-3' : 'px-4 pointer'" >Tax Charges (Home Country)</span>
+        <span (click)="changeTab(2)" [className]="currentTab == 2 ? 'btn-1 pointer me-3' : 'px-4 pointer'" >Tax Charges (Foreign Country)</span>
     </div>
 </div>
 
 <div class="row mx-0 pt-4">
-    <div class="col-lg-12 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
-        <span class="d-flex pb-lg-0 pb-2 form-split-label">Tax Name</span>
-        <div class="form-input col ms-lg-3">
+    <div class="col-lg-12 d-flex flex-column col-12 px-0 pb-3">
+        <span class="d-flex pb-2">Tax Name</span>
+        <div class="form-input col ">
             <input type="text" placeholder="Enter Text">
         </div>
     </div>
-    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
-        <span class="d-flex pb-lg-0 pb-2 form-split-label">Tax Calculation Formula</span>
-        <div class="form-input col ms-lg-3">
+    <div class="col-lg-6 d-flex flex-column col-12 px-0 pb-3 pe-lg-2">
+        <span class="d-flex pb-2">Tax Calculation Formula</span>
+        <div class="form-input col ">
             <input type="text" placeholder="Enter No">
         </div>
     </div>
-    <div class="col-lg-6 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
-        <span class="d-flex pb-lg-0 pb-2 ">Criteria</span>
-        <div class="form-input d-flex align-items-center col ms-lg-3">
-            <select name="" id="">
-                <option value="">Select</option>
-                <option value="">Select 1</option>
-                <option value="">Select 2</option>
-                <option value="">Select 3</option>
-            </select>
-            <i class="fa fa-angle-down arrow-down"></i>
+    <div class="col-lg-6 d-flex flex-column col-12 px-0 pb-3 ps-lg-2">
+        <span class="d-flex pb-2 ">Criteria</span>
+        <div class=" d-flex align-items-center col ">
+            <app-select-box class="w-100" options='["Select 1","Select 2","Select 3","Select 4","Select 5"]'></app-select-box>
         </div>
     </div>
-    <div class="col-lg-7 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
-        <span class="d-flex pb-lg-0 pb-2 form-split-label">Type Of Tax </span>
-        <div class=" d-flex col ps-lg-4 pt-lg-0 pt-3">
+    <div class="col-lg-6 d-flex flex-column col-12 px-0 pb-3">
+        <span class="d-flex pb-2">Type Of Tax </span>
+        <div class=" d-flex col pt-2">
             <label class="checkbox-container me-4 ">
                 <span class="text-dark">Service Tax</span>
                 <input type="radio" [checked]="true" value="1" name="check" (change)="inputChange($event)">
@@ -46,24 +40,12 @@
             </label>
         </div>
     </div>
-    <div class="col-lg-5 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
-        <div class="form-input d-flex align-items-center col " *ngIf="checkbox">
-            <select name="" id="">
-                <option value="">Select Service</option>
-                <option value="">Select 1</option>
-                <option value="">Select 2</option>
-                <option value="">Select 3</option>
-            </select>
-            <i class="fa fa-angle-down arrow-down"></i>
+    <div class="col-lg-6 d-flex flex-column col-12 px-0 pb-3 pt-3 ps-lg-2">
+        <div class="d-flex align-items-center col " *ngIf="checkbox">
+            <app-select-box class="w-100" options='["Select 1","Select 2","Select 3","Select 4","Select 5"]'></app-select-box>
         </div>
-        <div class="form-input d-flex align-items-center col " *ngIf="!checkbox">
-            <select name="" id="">
-                <option value="">Select State Province</option>
-                <option value="">Select 1</option>
-                <option value="">Select 2</option>
-                <option value="">Select 3</option>
-            </select>
-            <i class="fa fa-angle-down arrow-down"></i>
+        <div class=" d-flex align-items-center col " *ngIf="!checkbox">
+            <app-select-box class="w-100" options='["Select 1","Select 2","Select 3","Select 4","Select 5"]'></app-select-box>
         </div>
     </div>
 

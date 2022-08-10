@@ -450,7 +450,6 @@ option {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    transform: translateY(2px);
 }
 
 .ws-drop-table a {
@@ -656,4 +655,26 @@ option {
 }
 .ws-phone-inp input{
     display: none;
+}
+.search-able-input{
+    height: 39px !important;
+    /* background-color: #F2F2F2 !important ; */
+    padding: 10px;
+    /* border-radius: 5px; */
+    border-bottom: 1px solid #e0e0e0 !important;
+}
+.ws-search-able-list{
+max-height: 300px;
+overflow-y: scroll;
+}
+.ws-search-able-list span{
+    border-radius: 4px;
+    cursor: pointer;
+    padding:7px 10px;
+}
+.ws-search-able-list span:hover{
+    background-color:#023d8a1c;
+}
+.ws-search-able-dropdown{
+    padding: 12px 0 !important;
 }

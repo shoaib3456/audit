@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class AuditFeeChargesComponent implements OnInit {
 
   checkbox : number = 0
+  currentTab : number = 1
   isTableShow :boolean = false
+
+  changeTab(tab : number){
+    this.currentTab = tab
+  }
 
   inputChange ($event :any){
     this.checkbox = parseInt($event.target.value)

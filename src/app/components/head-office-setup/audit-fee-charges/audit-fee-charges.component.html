@@ -1,9 +1,9 @@
 <h2 class="fw-700 text-dark w-100 text-center col ">Audit Fee Charges</h2>
 <div class="row mx-0 pt-4">
-    <div class="col-12 d-flex pb-3 px-0">
-        <button class="btn-1 btn-1-size me-3 py-2">WRAP</button>
-        <button class="btn-1 btn-1-size me-3 py-2">SMETA</button>
-        <button class="btn-1 btn-1-size me-3 py-2">CT-PAT</button>
+    <div class="col-12 d-flex align-items-center pb-3 px-0">
+        <span (click)="changeTab(1)" [className]="currentTab == 1 ? 'btn-1 pointer btn-1-size me-3 py-2' : 'px-4 pointer'" >WRAP</span>
+        <span (click)="changeTab(2)" [className]="currentTab == 2 ? 'btn-1 pointer btn-1-size me-3 py-2' : 'px-4 pointer'" >SMETA</span>
+        <span (click)="changeTab(3)" [className]="currentTab == 3 ? 'btn-1 pointer btn-1-size me-3 py-2' : 'px-4 pointer'" >CT-PAT</span>
     </div>
     <div class="col-12 d-flex pt-4 px-0">
         <span class="col">Please select your default currency for Audit Fee Charges!</span>
@@ -138,15 +138,15 @@
     </div>
     
     <div class="row mx-0 pt-4">
-        <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3">
-            <span class="d-flex pb-lg-0 pb-2 form-split-label">Charges Name</span>
-            <div class="form-input col ms-lg-3">
+        <div class="col-lg-4 d-flex flex-column col-12 px-0 pb-3 pe-lg-2">
+            <span class="d-flex pb-2 ">Charges Name</span>
+            <div class="form-input col ">
                 <input type="text" placeholder="Enter/Suggest">
             </div>
         </div>
-        <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
-            <span class="d-flex pb-lg-0 pb-2 ">Fee Charges</span>
-            <div class="form-input d-flex align-items-center col ms-lg-3">
+        <div class="col-lg-4 d-flex flex-column col-12 px-0 pb-3 ps-lg-2 pe-lg-2">
+            <span class="d-flex pb-2 ">Fee Charges</span>
+            <div class="form-input d-flex align-items-center col ">
                 <select name="" id="">
                     <option value="">Select</option>
                     <option value="">Select 1</option>
@@ -156,9 +156,9 @@
                 <i class="fa fa-angle-down arrow-down"></i>
             </div>
         </div>
-        <div class="col-lg-4 d-flex flex-lg-row flex-column align-items-lg-center col-12 px-0 pb-3 ps-lg-4">
-            <span class="d-flex pb-lg-0 pb-2 ">Criteria</span>
-            <div class="form-input d-flex align-items-center col ms-lg-3">
+        <div class="col-lg-4 d-flex flex-column col-12 px-0 pb-3 ps-lg-2">
+            <span class="d-flex pb-2 ">Criteria</span>
+            <div class="form-input d-flex align-items-center col ">
                 <select name="" id="">
                     <option value="">Select</option>
                     <option value="">Select 1</option>
