@@ -7,16 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeadOfficeInformationComponent implements OnInit {
 
+  radio : String = ""
 
   getNumber($event : any){
     console.log($event);
   }
 
+  inputChange ($event :any){
+    this.radio = $event.target.value
+  }
+
   constructor() {
     
-   }
-
-   
+  }
 
   onCountryChange($event : any){
     console.log($event);
