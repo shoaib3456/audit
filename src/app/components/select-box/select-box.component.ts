@@ -9,6 +9,7 @@ export class SelectBoxComponent implements OnInit {
 
   value :string = "Select" 
   @Input() options:string ="[]";
+  @Input() defaultSelect:string ="";
 
 
   inputChange($event:any){
@@ -33,6 +34,9 @@ export class SelectBoxComponent implements OnInit {
     ngOnInit(): void {
       if(typeof this.options == 'string'){
         this.options = JSON.parse(this.options)
+      }
+      if(this.defaultSelect !=""){
+        this.value = this.defaultSelect
       }
   }
 

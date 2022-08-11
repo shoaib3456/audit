@@ -239,6 +239,7 @@ a {
 @media (max-width:991px) {
     .btn-1-size{
         min-width: 100px;
+        max-width: 100px;
     }
 }
 .btn-1:hover {
@@ -678,4 +679,7 @@ overflow-y: scroll;
 }
 .ws-search-able-dropdown{
     padding: 12px 0 !important;
+}
+.dropdown-menu{
+    min-width: 100%;
 }
