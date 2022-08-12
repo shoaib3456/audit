@@ -1,11 +1,50 @@
-<div class="d-flex justify-content-between align-items-center pt-lg-5 pt-4 px-4">
+<div class="d-flex justify-content-between align-items-center pt-4 px-4">
     <div class="d-flex align-items-center">
         <div class="d-lg-none d-block">
             <i class="fa fa-bars fs-5 pe-3" (click)="toogleSidebar()"></i>
         </div>
-        <div class="notification">
-            <mat-icon class="mat-icon">notifications_none</mat-icon>
-            <span>2</span>
+
+        <div class="dropdown ">
+            <button class=" dropdown-toggle avater-drop" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                <div class="notification">
+                    <mat-icon class="mat-icon">notifications_none</mat-icon>
+                    <span>2</span>
+                </div>
+            </button>
+            <ul style="min-width: 350px;" class="dropdown-menu user-dropdown pb-0" aria-labelledby="dropdownMenuButton1">
+                <div class="d-flex flex-column align-items-center ">
+                    <span class="fs-6 fw-500 text-dark border-bottom w-100 text-center py-2">Notifications</span>
+                    <div class="d-flex flex-column w-100 border-bottom py-2 px-3">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <span class="text-dark fw-500">Office</span>
+                            <span class="fs-11 text-end text-faded-2">12 Dec 2022</span>
+                        </div>
+                        <span class="fw-400">New Office created at karachi  , pakistan</span>
+                    </div>
+                    <div class="d-flex flex-column w-100 border-bottom py-2 px-3">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <span class="text-dark fw-500">Office</span>
+                            <span class="fs-11 text-end text-faded-2">12 Dec 2022</span>
+                        </div>
+                        <span class="fw-400">New Office created at karachi  , pakistan</span>
+                    </div>
+                    <div class="d-flex flex-column w-100 border-bottom py-2 px-3">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <span class="text-dark fw-500">Office</span>
+                            <span class="fs-11 text-end text-faded-2">12 Dec 2022</span>
+                        </div>
+                        <span class="fw-400">New Office created at karachi  , pakistan</span>
+                    </div>
+                    <div class="d-flex flex-column w-100 border-bottom py-2 px-3">
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <span class="text-dark fw-500">Office</span>
+                            <span class="fs-11 text-end text-faded-2">12 Dec 2022</span>
+                        </div>
+                        <span class="fw-400">New Office created at karachi  , pakistan</span>
+                    </div>
+                </div>
+            </ul>
         </div>
         <div>
             <mat-icon class="ms-3">settings</mat-icon>
@@ -17,9 +56,9 @@
             <img src="../../../assets/images/avater.png" alt="">
             <img src="../../../assets/images/arrow-down.png" alt="">
         </button>
-        <ul class="dropdown-menu user-dropdown" aria-labelledby="dropdownMenuButton1">
-            <li><a  class=""  routerLink="/head-office">Head Office </a></li>
-            <li><a class="" href="#">Logout</a></li>
+        <ul style="min-width: 150px;" class="dropdown-menu user-dropdown" aria-labelledby="dropdownMenuButton1">
+            <li><a routerLink="/head-office">Head Office </a></li>
+            <li><a href="#">Logout</a></li>
         </ul>
     </div>
 </div>
