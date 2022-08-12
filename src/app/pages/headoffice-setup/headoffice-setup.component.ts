@@ -14,7 +14,7 @@ export class HeadofficeSetupComponent implements OnInit {
   }
 
 
-  currentTab : number = 1
+  currentTab : number = 5
   
   next(){
     if(this.currentTab < 5){

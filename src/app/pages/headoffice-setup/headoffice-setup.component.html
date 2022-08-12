@@ -4,7 +4,7 @@
         <div class="main-col my-3 order-2">
             <div class="card py-5 px-lg-5 px-4 h-100 card-main">
                 <div class=" d-flex border-bottom mb-4">
-                    <h3 class="fw-700 text-dark  col-12 pb-3  ">Welcome you’re 5 minutes away from Head Office Setup</h3>
+                    <h4 class="fw-700 text-dark  col-12 pb-3  ">Welcome! Please complete Head Office Setup to access the main software!</h4>
                 </div>
                 <app-head-office-information *ngIf="currentTab == 1"></app-head-office-information>
                 <app-head-of-office *ngIf="currentTab == 2"></app-head-of-office>
@@ -19,7 +19,7 @@
                     <div>
                         <button class="btn-1 btn-1-size" *ngIf="currentTab < 5" (click)="next()">Next</button>
                         <a routerLink="/fee-charges" class="btn-1 btn-1-size text-light"
-                            *ngIf="currentTab == 5">Save</a>
+                            *ngIf="currentTab == 5">Finish Setup</a>
                     </div>
                 </div>
             </div>
@@ -50,6 +50,9 @@
                     <span [className]="currentTab == 5 ? 'small-dot active' : 'small-dot'"></span>
                     <span [className]="currentTab == 5 ? 'check-dot active' : 'check-dot'"><i class="fa fa-check"></i></span>
                     <span>Tax Details</span>
+                </div>
+                <div class="d-flex align-items-center justify-content-center pt-4 mt-3 w-100">
+                    <span  [className]="currentTab == 5 ? 'text-primary fs-7' : 'fs-7'">Finish Setup</span>
                 </div>
             </div>
         </app-aside>

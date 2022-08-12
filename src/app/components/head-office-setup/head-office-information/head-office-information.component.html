@@ -1,4 +1,4 @@
-<h2 class="fw-700 text-dark w-100 text-center">Head Office Information</h2>
+<h4 class="fw-700 text-dark w-100 text-center">Head Office Information</h4>
 <div class="row mx-0 pt-4">
 
     <div class="col-lg-6 d-flex  flex-column col-12 px-0 pb-3 pe-lg-2">
@@ -36,8 +36,7 @@
     </div>
     <div class="col-lg-4 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2 pe-lg-2">
         <span class="d-flex  pb-2">
-            State
-            Province
+            Province/State
             <i class="fa fa-asterisk text-danger fs-12"></i>
         </span>
         <div class=" d-flex align-items-center col ">
@@ -79,24 +78,24 @@
                 <input type="text" (countryChange)="onCountryChange($event)" (ng2TelOutput)="getNumber($event)"
                     [ng2TelInputOptions]="{initialCountry: 'pk',separateDialCode:true}" ng2TelInput />
             </div>
-            <div class="form-input col d-flex ms-2  ">
-                <input type="text" class="text-center" placeholder="20">
+            <div class="form-input col d-flex ms-2 px-2 ">
+                <input type="text" class="text-center "  placeholder="Code">
             </div>
             <div class="form-input col-4 d-flex ms-2  ">
                 <input type="text" class="text-center" placeholder="7183 8750">
             </div>
-            <div class="form-input col d-flex ms-2  ">
+            <div class="form-input col d-flex ms-2 px-3 ">
                 <input type="text" class="text-center" placeholder="Ext">
             </div>
         </div>
     </div>
     <div class="col-lg-12 d-flex  flex-column  col-12 px-0 pb-3 ">
         <div class="d-flex flex-column ">
+            <span class="py-3 pe-lg-4 d-flex ">
+                Type of Orgnization
+               <i class="fa fa-asterisk text-danger ps-1 fs-12"></i>
+           </span>
             <div class="d-flex flex-lg-row flex-wrap flex-column ">
-                <span class="py-3 pe-lg-4 d-flex ">
-                    Type of Orgnization
-                   <i class="fa fa-asterisk text-danger ps-1 fs-12"></i>
-               </span>
                 <div class=" py-3 pe-lg-4">
                     <label class="checkbox-container">
                         <input type="radio" (change)="inputChange($event)" value="Proprietorship" name="check-radio" checked>

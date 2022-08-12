@@ -1,51 +1,52 @@
 <h2 class="fw-700 text-dark w-100 text-center">Head Of The Office</h2>
 <div class="row mx-0 pt-4">
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2">
+    <div class="col-lg-3 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2">
         <span class="d-flex pb-2 form-split-label">Salutation</span>
         <div class="form-input col ">
-            <input type="text" placeholder="Enter/Suggest">
+            <input type="text" placeholder="Enter">
         </div>
     </div>
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2">
+    <div class="col-lg-3 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2 pe-lg-2">
         <span class="d-flex pb-2 ">First Name</span>
         <div class="form-input col ">
             <input type="text" placeholder="Enter">
         </div>
     </div>
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2">
+    <div class="col-lg-3 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2 ps-lg-2">
         <span class="d-flex pb-2 form-split-label">Middle Name</span>
         <div class="form-input col ">
-            <input type="text" placeholder="Enter/Suggest">
+            <input type="text" placeholder="Enter">
         </div>
     </div>
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2">
+    <div class="col-lg-3 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2">
         <span class="d-flex pb-2 ">Last Name</span>
         <div class="form-input col ">
             <input type="text" placeholder="Enter">
         </div>
     </div>
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2">
+    <div class="col-lg-4 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2">
+        <span class="d-flex pb-2 ">Designation</span>
+        <div class="form-input col ">
+            <input type="text" placeholder="Enter">
+        </div>
+    </div>
+    <div class="col-lg-4 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2 ps-lg-2">
         <span class="d-flex pb-2 form-split-label">Role</span>
         <div class=" d-flex align-items-center col ">
             <app-select-box class="w-100" options='["User","Admin","Super Admin"]'></app-select-box>
         </div>
     </div>
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2">
-        <span class="d-flex pb-2 ">Designation</span>
+    <div class="col-lg-4 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2">
+        <span class="d-flex pb-2 ">Email</span>
         <div class="form-input col ">
             <input type="text" placeholder="Enter">
         </div>
     </div>
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 pe-lg-2">
+    <div class="col-lg-4 d-flex  flex-column  col-12 px-0 pb-3 ">
         <span class="d-flex pb-2 form-split-label">Contact</span>
         <div class="form-input col ">
             <input type="text"  [ng2TelInputOptions]="{initialCountry: 'pk',separateDialCode:true}" ng2TelInput />
         </div>
     </div>
-    <div class="col-lg-6 d-flex  flex-column  col-12 px-0 pb-3 ps-lg-2">
-        <span class="d-flex pb-2 ">Designation</span>
-        <div class="form-input col ">
-            <input type="text" placeholder="Enter">
-        </div>
-    </div>
+  
 </div>
